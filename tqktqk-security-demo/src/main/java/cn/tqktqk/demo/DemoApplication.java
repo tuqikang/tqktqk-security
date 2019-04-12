@@ -1,6 +1,6 @@
 package cn.tqktqk.demo;
 
-import cn.tqktqk.demo.exception.UserNotExistException;
+import cn.tqktqk.demo.aspect.config.TimeLog;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,8 +25,9 @@ public class DemoApplication {
     }
 
     @GetMapping("/")
+    @TimeLog
     public String hello(){
-        throw new UserNotExistException("19");
-//        return "Hello Security";
+//        throw new UserNotExistException("19");
+        return "Hello Security";
     }
 }

@@ -18,6 +18,10 @@
             <artifactId>tqktqk-security-browse</artifactId>
             <version>${tqktqk-security-version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
